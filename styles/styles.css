@@ -68,10 +68,14 @@ main #player-options:hover{
     color: red;
     font-size: 15px;
     margin: 10px;
+    margin-left: 35px;
 }
 
 .score-card #try-again:hover{    
     cursor: pointer;
+}
+.score-card #winner-board{
+    margin-left: 25px;
 }
 
 .score-card {
