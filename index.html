@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    <script src="./scripts/app.js"></script>
-    
+
+    <main>
+        
+        <div class="score-card">
+            <img src="./images/user.png" alt="">
+            <div id="score-board"></div>
+            <img src="./images/computer.png" alt="">
+        </div>
+
+        <div id="winner-board"></div>
+        <div id="try-again"></div>
+        
+        <div class="options">
+        <div>
+
+            <button id="player-options" data-selection="rock" ><img data-selection="rock" id="rock-image" src="./images/rock.jpeg" alt=""></button>
+            <button id="player-options" data-selection="paper" ><img data-selection="paper" src="./images/paper.jpeg" alt=""></button>
+            <button id="player-options" data-selection="scissors" ><img data-selection="scissors" src="./images/scissors.jpeg" alt=""></button>
+
+            
+
+        </div>
+
+        <div>
+
+            <button id="computer-options" data-selection="rock" ><img id="rock-image" src="./images/rock.jpeg" alt=""></button>
+            <button id="computer-options" data-selection="paper" ><img src="./images/paper.jpeg" alt=""></button>
+            <button id="computer-options" data-selection="scissors" ><img src="./images/scissors.jpeg" alt=""></button>
+
+            
+
+        </div>
+
+    </div>
+    </main>
+
+
+
+    <script src="./scripts/app-v2.js"></script>
+
 </body>
+
 </html>

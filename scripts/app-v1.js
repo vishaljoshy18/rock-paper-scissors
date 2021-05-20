@@ -1,5 +1,5 @@
 function computerPlay() {
-    let computerOptions = ["rock", "paper", "scissors"];
+    const  computerOptions = ["rock", "paper", "scissors"];
     return computerOptions[Math.floor(Math.random() * 3)];
 }
 

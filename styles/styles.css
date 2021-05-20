@@ -1,0 +1,33 @@
+img {
+    width :150px;
+    height: 150px;
+}
+button{
+    border: none;
+    background: transparent;
+    margin: auto;
+}
+#score-board {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#winner-board{
+    display: flex;
+    justify-content: center;
+
+}
+
+.score-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
