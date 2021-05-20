@@ -2,12 +2,19 @@ function getPlayerChocie() {
     const buttons = document.querySelectorAll('#player-options');
     buttons.forEach(button => {
         button.addEventListener('click', playRound);
+        
     });
 }
-
+let c=0;
+let randomNumber=0;
+const computerOptions = ["rock", "paper", "scissors"];
 function getComputerChoice() {
-    const computerOptions = ["rock", "paper", "scissors"];
-    let randomNumber = Math.floor(Math.random() * 3);
+    if(c>0){setAnimation(computerOptions[randomNumber]);}
+    c++;
+    
+    randomNumber = Math.floor(Math.random() * 3);
+    setAnimation(computerOptions[randomNumber]);
+
     return computerOptions[randomNumber];
 }
 function compareChoices(playerSelection, computerSelection) {
@@ -96,7 +103,8 @@ function resetScore(){
 
 function playRound(e) {
     let playerSelection = e.target.dataset.selection;
-    console.log(playerSelection);
+
+    console.log(e.target);
     let computerSelection = getComputerChoice();
     console.log(computerSelection);
     let roundResult = compareChoices(playerSelection, computerSelection);
@@ -105,9 +113,13 @@ function playRound(e) {
     game(roundResult);
 }
 
-
+function setAnimation(computerSelection){
+    const coption= document.querySelector(`#computer-options-${computerSelection}`);
+    coption.classList.toggle('selected');
+}
 
 let userScore = 0, computerScore = 0;
 
 updateScoreBoard(0,0);
 getPlayerChocie();
+

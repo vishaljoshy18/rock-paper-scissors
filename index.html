@@ -8,43 +8,54 @@
     <title>Rock Paper Scissors</title>
 
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <h2>First to 5 points wins</h2>
+    </header>
 
     <main>
-        
+
+        <div class="user">
+            <img id="user-icon" src="./images/user.png" alt="">
+            <div>
+
+                <button id="player-options" data-selection="rock"><img data-selection="rock" src="./images/rock.jpeg"
+                        alt=""></button>
+                <button id="player-options" data-selection="paper"><img data-selection="paper" src="./images/paper.jpeg"
+                        alt=""></button>
+                <button id="player-options" data-selection="scissors"><img data-selection="scissors"
+                        src="./images/scissors.jpeg" alt=""></button>
+
+            </div>
+        </div>
+
+
         <div class="score-card">
-            <img src="./images/user.png" alt="">
+            <div id="winner-board"></div>
+            <div id="try-again"></div>
             <div id="score-board"></div>
-            <img src="./images/computer.png" alt="">
-        </div>
-
-        <div id="winner-board"></div>
-        <div id="try-again"></div>
-        
-        <div class="options">
-        <div>
-
-            <button id="player-options" data-selection="rock" ><img data-selection="rock" id="rock-image" src="./images/rock.jpeg" alt=""></button>
-            <button id="player-options" data-selection="paper" ><img data-selection="paper" src="./images/paper.jpeg" alt=""></button>
-            <button id="player-options" data-selection="scissors" ><img data-selection="scissors" src="./images/scissors.jpeg" alt=""></button>
-
-            
 
         </div>
 
-        <div>
 
-            <button id="computer-options" data-selection="rock" ><img id="rock-image" src="./images/rock.jpeg" alt=""></button>
-            <button id="computer-options" data-selection="paper" ><img src="./images/paper.jpeg" alt=""></button>
-            <button id="computer-options" data-selection="scissors" ><img src="./images/scissors.jpeg" alt=""></button>
 
-            
+        <div class="computer">
+
+            <img id="computer-icon" src="./images/computer.png" alt="">
+            <div>
+
+                <button id="computer-options-rock"><img src="./images/rock.jpeg" alt=""></button>
+                <button id="computer-options-paper"><img src="./images/paper.jpeg" alt=""></button>
+                <button id="computer-options-scissors"><img src="./images/scissors.jpeg" alt=""></button>
+
+            </div>
 
         </div>
-
-    </div>
     </main>
 
 

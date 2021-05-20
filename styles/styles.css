@@ -1,33 +1,88 @@
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+
 img {
     width :150px;
     height: 150px;
 }
-button{
-    border: none;
-    background: transparent;
-    margin: auto;
-}
-#score-board {
-    font-size: 120px;
+header{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+header h1,h2{
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    background-color: rgb(182, 182, 180);
 }
 
-.options{
+main{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
-
-#winner-board{
+main .user{
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    margin: 100px
 }
 
-.score-card{
+main .computer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    
+}
+
+main .score-card{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+main .score-card #score-board {
+    font-size: 60px;
+}
+
+main #user-icon , #computer-icon{
+    margin-bottom: 40px;
+}
+
+main #player-options , #computer-options{
+    margin : 5px;
+}
+
+main #player-options:hover{
+    border: solid 2px black; 
+    cursor: pointer;
+}
+
+.score-card #try-again{
+    color: red;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.score-card #try-again:hover{    
+    cursor: pointer;
+}
+
+.score-card {
+    position: absolute;
+}
+.score-card #score-board{
+    margin-left : 55px;
+    margin-right: 30px;
+}
+
+
+.selected{
+    background-color: red;
+}
