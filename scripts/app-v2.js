@@ -21,35 +21,35 @@ function compareChoices(playerSelection, computerSelection) {
 
     let result;
     switch (playerSelection) {
-        case "rock": if (computerSelection == "rock") {
-            result = "draw";
+        case "rock": if (computerSelection == "scissors") {
+            result = "win";
             break;
         } else if (computerSelection == "paper") {
             result = "lose";
             break;
-        } else if (computerSelection == "scissors") {
-            result = "win";
+        } else {
+            result = "draw";
             break;
         }
 
         case "paper": if (computerSelection == "rock") {
             result = "win";
             break;
-        } else if (computerSelection == "paper") {
-            result = "draw";
-            break;
         } else if (computerSelection == "scissors") {
             result = "lose";
+            break;
+        } else {
+            result = "draw";
             break;
         }
 
-        case "scissors": if (computerSelection == "rock") {
-            result = "lose";
-            break;
-        } else if (computerSelection == "paper") {
+        case "scissors": if (computerSelection == "paper") {
             result = "win";
             break;
-        } else if (computerSelection == "scissors") {
+        } else if (computerSelection == "rock") {
+            result = "lose";
+            break;
+        } else {
             result = "draw";
             break;
         }
